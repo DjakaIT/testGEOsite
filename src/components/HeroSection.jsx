@@ -1,0 +1,69 @@
+import React from 'react';
+import { Box, Container, Typography, Button } from '@mui/material';
+
+function HeroSection() {
+  return (
+    <Box
+      sx={{
+        background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+        color: 'white',
+        py: 10,
+        textAlign: 'center',
+        width: '100%'
+      }}
+    >
+      <Container maxWidth="lg" sx={{ px: { xs: 2, sm: 3, md: 4 } }}>
+        <Typography variant="h2" component="h1" gutterBottom sx={{ fontWeight: 'bold' }}>
+          Dobrodošli u DigiPort
+        </Typography>
+        <Typography variant="h5" sx={{ mb: 4, opacity: 0.9 }}>
+          Vaš pouzdani servis računala u Zadru
+        </Typography>
+        <Typography variant="body1" sx={{ mb: 4, fontSize: '1.2rem' }}>
+          Profesionalni popravak računala, laptopa i mobitela već više od 10 godina
+        </Typography>
+        <Box sx={{ display: 'flex', gap: 2, justifyContent: 'center', flexWrap: 'wrap' }}>
+          <Button
+            variant="contained"
+            size="large"
+            component="a"
+            href="/kontakt"
+            sx={{
+              backgroundColor: 'white',
+              color: '#667eea',
+              '&:hover': { backgroundColor: '#f5f5f5' },
+              px: 4,
+              py: 1.5,
+              fontSize: '1.1rem',
+              textDecoration: 'none'
+            }}
+          >
+            Kontaktirajte nas
+          </Button>
+          <Button
+            variant="outlined"
+            size="large"
+            component="a"
+            href="/usluge"
+            sx={{
+              borderColor: 'white',
+              color: 'white',
+              '&:hover': { 
+                borderColor: '#f5f5f5',
+                backgroundColor: 'rgba(255,255,255,0.1)'
+              },
+              px: 4,
+              py: 1.5,
+              fontSize: '1.1rem',
+              textDecoration: 'none'
+            }}
+          >
+            Sve naše usluge
+          </Button>
+        </Box>  
+      </Container>
+    </Box>
+  );
+}
+
+export default HeroSection;
