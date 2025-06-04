@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box } from '@mui/material';
-import Navbar from '../components/NavbarTemp';
+import Navbar from '../components/Navbar';
 import HeroSectionSpecialized from '../components/HeroSectionSpecialized';
 import SpecializedFixesSection from '../components/SpecializedFixesSection';
 import SalesSection from '../components/SalesSection';
