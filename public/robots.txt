@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://testgeosite.netlify.app/sitemap.xml
