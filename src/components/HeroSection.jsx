@@ -13,14 +13,16 @@ function HeroSection() {
       }}
     >
       <Container maxWidth="lg" sx={{ px: { xs: 2, sm: 3, md: 4 } }}>
-        <Typography variant="h2" component="h1" gutterBottom sx={{ fontWeight: 'bold' }}>
+        <Typography variant="h1" component="h1" gutterBottom sx={{ fontWeight: 'bold', fontSize: { xs: '2.5rem', md: '3.5rem' } }}>
           Dobrodošli u DigiPort
         </Typography>
         <Typography variant="h5" sx={{ mb: 4, opacity: 0.9 }}>
           Vaš pouzdani servis računala u Zadru
         </Typography>
         <Typography variant="body1" sx={{ mb: 4, fontSize: '1.2rem' }}>
-          Profesionalni popravak računala, laptopa i mobitela već više od 10 godina
+          Profesionalni popravak računala, laptopa i mobitela već više od 10 godina.
+          Nudimo brza i učinkovita rješenja za sve vaše IT probleme, od jednostavnih popravaka 
+          do složenih nadogradnji sustava.
         </Typography>
         <Box sx={{ display: 'flex', gap: 2, justifyContent: 'center', flexWrap: 'wrap' }}>
           <Button
