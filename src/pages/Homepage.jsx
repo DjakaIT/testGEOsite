@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar';
 import HeroSection from '../components/HeroSection';
 import ServicesSection from '../components/ServicesSection';
 import ReviewsSection from '../components/ReviewsSection';
+import PromoBanner from '../components/PromoBanner'; // Import the new component
 import Footer from '../components/Footer';
 import '../css/homepage.css';
 
@@ -14,6 +15,7 @@ function Homepage() {
       <HeroSection />
       <ServicesSection />
       <ReviewsSection />
+      <PromoBanner /> {/* Add the component here */}
       <Footer />
     </Box>
   );

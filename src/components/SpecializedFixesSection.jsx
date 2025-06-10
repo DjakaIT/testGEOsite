@@ -18,6 +18,7 @@ import {
 function SpecializedFixesSection() {
   const specializedServices = [
     {
+      id: 1,
       icon: <Restore sx={{ fontSize: 40 }} />,
       title: 'Refurbishing računala',
       description: 'Potpuna obnova starijih računala - čišćenje, zamjena komponenti, optimizacija performansi',
@@ -26,6 +27,7 @@ function SpecializedFixesSection() {
       complexity: 'Napredna'
     },
     {
+      id: 2,
       icon: <Thermostat sx={{ fontSize: 40 }} />,
       title: 'Zamjena termalne paste',
       description: 'Profesionalna zamjena termalne paste za optimalno hlađenje procesora i grafičke kartice',
@@ -34,6 +36,7 @@ function SpecializedFixesSection() {
       complexity: 'Srednja'
     },
     {
+      id: 3,
       icon: <CleaningServices sx={{ fontSize: 40 }} />,
       title: 'Dubinsko čišćenje',
       description: 'Detaljno čišćenje unutrašnjosti računala, ventilatora i komponenti od prašine',
@@ -42,6 +45,7 @@ function SpecializedFixesSection() {
       complexity: 'Osnovna'
     },
     {
+      id: 4,
       icon: <Memory sx={{ fontSize: 40 }} />,
       title: 'Nadogradnja RAM memorije',
       description: 'Ugradnja dodatne memorije za poboljšanje performansi sistema',
@@ -50,6 +54,7 @@ function SpecializedFixesSection() {
       complexity: 'Osnovna'
     },
     {
+      id: 5,
       icon: <Speed sx={{ fontSize: 40 }} />,
       title: 'SSD ugradnja i migracija',
       description: 'Zamjena HDD-a sa SSD diskom i prijenos svih podataka',
@@ -58,6 +63,7 @@ function SpecializedFixesSection() {
       complexity: 'Srednja'
     },
     {
+      id: 6,
       icon: <Security sx={{ fontSize: 40 }} />,
       title: 'Data recovery',
       description: 'Oporavak izgubljenih podataka s oštećenih diskova i memorijskih kartica',
@@ -66,6 +72,7 @@ function SpecializedFixesSection() {
       complexity: 'Ekspertna'
     },
     {
+      id: 7,
       icon: <Hardware sx={{ fontSize: 40 }} />,
       title: 'Popravak matične ploče',
       description: 'Mikrolemljenje i popravak komponenti na matičnoj ploči',
@@ -74,6 +81,7 @@ function SpecializedFixesSection() {
       complexity: 'Ekspertna'
     },
     {
+      id: 8,
       icon: <Computer sx={{ fontSize: 40 }} />,
       title: 'Gaming PC optimizacija',
       description: 'Posebna optimizacija sistema za gaming performanse',
@@ -82,6 +90,7 @@ function SpecializedFixesSection() {
       complexity: 'Napredna'
     },
     {
+      id: 9,
       icon: <Laptop sx={{ fontSize: 40 }} />,
       title: 'Laptop hinge popravak',
       description: 'Popravak polomljenih šarki na laptop računalima',
@@ -90,6 +99,7 @@ function SpecializedFixesSection() {
       complexity: 'Napredna'
     },
     {
+      id: 10,
       icon: <PhoneIphone sx={{ fontSize: 40 }} />,
       title: 'Mobilni popravci',
       description: 'Zamjena ekrana, baterija, kamera i drugih komponenti pametnih telefona',
@@ -98,6 +108,7 @@ function SpecializedFixesSection() {
       complexity: 'Srednja'
     },
     {
+      id: 11,
       icon: <Dvr sx={{ fontSize: 40 }} />,
       title: 'Ugradnja sigurnosnih sustava',
       description: 'Instalacija i konfiguracija sigurnosnih kamera i DVR sistema',
@@ -106,6 +117,7 @@ function SpecializedFixesSection() {
       complexity: 'Napredna'
     },
     {
+      id: 12,
       icon: <Router sx={{ fontSize: 40 }} />,
       title: 'Mrežni setup',
       description: 'Konfiguracija routera, Wi-Fi mreža i mrežnih komponenti',
@@ -170,9 +182,19 @@ function SpecializedFixesSection() {
                 <CardMedia
                   component="img"
                   height="200"
-                  image="/src/assets/thermalPaste.jpg"
-                  alt={service.title}
+                  width="100%"
+                  image={`/src/assets/services/${service.id}-${service.title.toLowerCase().replace(/\s+/g, '-')}.webp`}
+                  srcSet={`
+                    /src/assets/services/${service.id}-${service.title.toLowerCase().replace(/\s+/g, '-')}-300w.webp 300w,
+                    /src/assets/services/${service.id}-${service.title.toLowerCase().replace(/\s+/g, '-')}-600w.webp 600w
+                  `}
+                  sizes="(max-width: 600px) 300px, 600px"
+                  alt={`${service.title} - IT servis DigiPort Zadar`}
+                  loading="lazy"
                   sx={{ objectFit: 'cover' }}
+                  data-location="Zadar, Croatia"
+                  data-service-type={service.complexity}
+                  data-geo-region="HR-13"
                 />
                 <Box
                   sx={{
