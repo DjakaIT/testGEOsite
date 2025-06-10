@@ -13,7 +13,16 @@ function HeroSection() {
       }}
     >
       <Container maxWidth="lg" sx={{ px: { xs: 2, sm: 3, md: 4 } }}>
-        <Typography variant="h1" component="h1" gutterBottom sx={{ fontWeight: 'bold', fontSize: { xs: '2.5rem', md: '3.5rem' } }}>
+        <Typography 
+          variant="h1" 
+          component="h1" 
+          gutterBottom 
+          sx={{ 
+            fontFamily: 'Inter, sans-serif',
+            fontWeight: 'bold', 
+            fontSize: { xs: '2.5rem', md: '3.5rem' } 
+          }}
+        >
           Dobrodošli u DigiPort
         </Typography>
         <Typography variant="h5" sx={{ mb: 4, opacity: 0.9 }}>

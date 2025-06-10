@@ -50,6 +50,7 @@ function ServiceCard({ icon, title, description }) {
           variant="body2" 
           color="text.secondary"
           sx={{
+            fontFamily: 'Roboto, sans-serif',
             lineHeight: 1.5,
             overflow: 'hidden',
             display: '-webkit-box',

@@ -98,6 +98,7 @@ function Navbar() {
             component="a"
             href="/"
             sx={{
+              fontFamily: 'Open Sans, sans-serif',
               fontWeight: 'bold',
               color: '#667eea',
               textDecoration: 'none',
@@ -119,6 +120,7 @@ function Navbar() {
                   component="a"
                   href={item.href}
                   sx={{
+                    fontFamily: 'Open Sans, sans-serif',
                     color: isActive(item.href) ? '#667eea' : '#333',
                     fontWeight: isActive(item.href) ? 600 : 500,
                     fontSize: '1rem',
