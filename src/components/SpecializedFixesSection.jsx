@@ -140,12 +140,12 @@ function SpecializedFixesSection() {
           sx={{
             display: 'grid',
             gridTemplateColumns: {
-              xs: '1fr',                    // 1 column on mobile
-              sm: 'repeat(2, 1fr)',         // 2 columns on tablet
-              lg: 'repeat(3, 1fr)'          // 3 columns on desktop
+              xs: '1fr',                    // 1 stupac na mobitelu
+              sm: 'repeat(2, 1fr)',         // 2 stupca na tablet
+              lg: 'repeat(3, 1fr)'          // 3 stupca na desktop
             },
-            gap: { xs: 3, sm: 4 },         // Consistent gap between cards
-            mb: 6                          // Bottom margin
+            gap: { xs: 3, sm: 4 },         // Ustaljen razmak između kartica
+            mb: 6                          // Donja margina
           }}
         >
           {specializedServices.map((service, index) => (
@@ -154,11 +154,11 @@ function SpecializedFixesSection() {
               sx={{
                 display: 'flex',
                 flexDirection: 'column',
-                height: '100%',             // Full height
-                minHeight: '450px',         // Minimum height for consistency
-                maxHeight: '450px',         // Maximum height for consistency
-                borderRadius: 2,            // Consistent rounded corners
-                overflow: 'hidden',         // Hide overflow
+                height: '100%',             
+                minHeight: '450px',         
+                maxHeight: '450px',         
+                borderRadius: 2,            
+                overflow: 'hidden',         
                 transition: 'all 0.3s ease-in-out',
                 '&:hover': {
                   transform: 'translateY(-8px)',
