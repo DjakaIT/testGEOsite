@@ -24,12 +24,23 @@ function Navbar() {
     setMobileOpen(!mobileOpen);
   };
 
+  // Get current path to determine active page
+  const currentPath = window.location.pathname;
+
   const menuItems = [
-    { label: 'Početna', href: '/', active: true },
+    { label: 'Početna', href: '/' },
     { label: 'Usluge', href: '/usluge' },
     { label: 'O nama', href: '/o-nama' },
     { label: 'Kontakt', href: '/kontakt' }
   ];
+
+  // Helper function to check if a menu item is active
+  const isActive = (href) => {
+    if (href === '/' && currentPath === '/') {
+      return true;
+    }
+    return href !== '/' && currentPath === href;
+  };
 
   const drawer = (
     <Box sx={{ width: 250, pt: 2 }}>
@@ -59,8 +70,8 @@ function Navbar() {
               primary={item.label}
               sx={{
                 '& .MuiListItemText-primary': {
-                  fontWeight: item.active ? 600 : 400,
-                  color: item.active ? '#667eea' : 'inherit'
+                  fontWeight: isActive(item.href) ? 600 : 400,
+                  color: isActive(item.href) ? '#667eea' : 'inherit'
                 }
               }}
             />
@@ -108,8 +119,8 @@ function Navbar() {
                   component="a"
                   href={item.href}
                   sx={{
-                    color: item.active ? '#667eea' : '#333',
-                    fontWeight: item.active ? 600 : 500,
+                    color: isActive(item.href) ? '#667eea' : '#333',
+                    fontWeight: isActive(item.href) ? 600 : 500,
                     fontSize: '1rem',
                     textTransform: 'none',
                     px: 2,
@@ -120,7 +131,7 @@ function Navbar() {
                       backgroundColor: 'rgba(102, 126, 234, 0.1)',
                       color: '#667eea'
                     },
-                    '&::after': item.active ? {
+                    '&::after': isActive(item.href) ? {
                       content: '""',
                       position: 'absolute',
                       bottom: 0,

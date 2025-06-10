@@ -21,7 +21,7 @@ function SpecializedFixesSection() {
       icon: <Restore sx={{ fontSize: 40 }} />,
       title: 'Refurbishing računala',
       description: 'Potpuna obnova starijih računala - čišćenje, zamjena komponenti, optimizacija performansi',
-      price: 'Od 150 kn',
+      price: 'Od 20 €',
       duration: '2-3 dana',
       complexity: 'Napredna'
     },
@@ -29,7 +29,7 @@ function SpecializedFixesSection() {
       icon: <Thermostat sx={{ fontSize: 40 }} />,
       title: 'Zamjena termalne paste',
       description: 'Profesionalna zamjena termalne paste za optimalno hlađenje procesora i grafičke kartice',
-      price: 'Od 80 kn',
+      price: 'Od 11 €',
       duration: '1 dan',
       complexity: 'Srednja'
     },
@@ -37,7 +37,7 @@ function SpecializedFixesSection() {
       icon: <CleaningServices sx={{ fontSize: 40 }} />,
       title: 'Dubinsko čišćenje',
       description: 'Detaljno čišćenje unutrašnjosti računala, ventilatora i komponenti od prašine',
-      price: 'Od 100 kn',
+      price: 'Od 13 €',
       duration: '1 dan',
       complexity: 'Osnovna'
     },
@@ -45,7 +45,7 @@ function SpecializedFixesSection() {
       icon: <Memory sx={{ fontSize: 40 }} />,
       title: 'Nadogradnja RAM memorije',
       description: 'Ugradnja dodatne memorije za poboljšanje performansi sistema',
-      price: 'Od 120 kn + dio',
+      price: 'Od 16 € + dio',
       duration: '1 dan',
       complexity: 'Osnovna'
     },
@@ -53,7 +53,7 @@ function SpecializedFixesSection() {
       icon: <Speed sx={{ fontSize: 40 }} />,
       title: 'SSD ugradnja i migracija',
       description: 'Zamjena HDD-a sa SSD diskom i prijenos svih podataka',
-      price: 'Od 200 kn + dio',
+      price: 'Od 27 € + dio',
       duration: '1-2 dana',
       complexity: 'Srednja'
     },
@@ -61,7 +61,7 @@ function SpecializedFixesSection() {
       icon: <Security sx={{ fontSize: 40 }} />,
       title: 'Data recovery',
       description: 'Oporavak izgubljenih podataka s oštećenih diskova i memorijskih kartica',
-      price: 'Od 300 kn',
+      price: 'Od 40 €',
       duration: '3-7 dana',
       complexity: 'Ekspertna'
     },
@@ -69,7 +69,7 @@ function SpecializedFixesSection() {
       icon: <Hardware sx={{ fontSize: 40 }} />,
       title: 'Popravak matične ploče',
       description: 'Mikrolemljenje i popravak komponenti na matičnoj ploči',
-      price: 'Od 250 kn',
+      price: 'Od 33 €',
       duration: '3-5 dana',
       complexity: 'Ekspertna'
     },
@@ -77,7 +77,7 @@ function SpecializedFixesSection() {
       icon: <Computer sx={{ fontSize: 40 }} />,
       title: 'Gaming PC optimizacija',
       description: 'Posebna optimizacija sistema za gaming performanse',
-      price: 'Od 180 kn',
+      price: 'Od 24 €',
       duration: '1-2 dana',
       complexity: 'Napredna'
     },
@@ -85,7 +85,7 @@ function SpecializedFixesSection() {
       icon: <Laptop sx={{ fontSize: 40 }} />,
       title: 'Laptop hinge popravak',
       description: 'Popravak polomljenih šarki na laptop računalima',
-      price: 'Od 220 kn',
+      price: 'Od 29 €',
       duration: '2-3 dana',
       complexity: 'Napredna'
     },
@@ -93,15 +93,15 @@ function SpecializedFixesSection() {
       icon: <PhoneIphone sx={{ fontSize: 40 }} />,
       title: 'Mobilni popravci',
       description: 'Zamjena ekrana, baterija, kamera i drugih komponenti pametnih telefona',
-      price: 'Od 150 kn + dio',
+      price: 'Od 20 € + dio',
       duration: '1-2 dana',
       complexity: 'Srednja'
     },
     {
       icon: <Dvr sx={{ fontSize: 40 }} />,
-      title: 'CCTV sistem setup',
+      title: 'Ugradnja sigurnosnih sustava',
       description: 'Instalacija i konfiguracija sigurnosnih kamera i DVR sistema',
-      price: 'Od 400 kn',
+      price: 'Od 53 €',
       duration: '1 dan',
       complexity: 'Napredna'
     },
@@ -109,7 +109,7 @@ function SpecializedFixesSection() {
       icon: <Router sx={{ fontSize: 40 }} />,
       title: 'Mrežni setup',
       description: 'Konfiguracija routera, Wi-Fi mreža i mrežnih komponenti',
-      price: 'Od 120 kn',
+      price: 'Od 16 €',
       duration: '1 dan',
       complexity: 'Srednja'
     }
