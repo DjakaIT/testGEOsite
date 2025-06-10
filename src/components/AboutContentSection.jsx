@@ -47,47 +47,84 @@ function AboutContentSection() {
               Vjerujemo u transparentnost, kvalitetu i osobni pristup svakom klijentu.
             </Typography>
           </Grid>
-          <Grid item xs={12} md={6}>
-          
-          </Grid>
+         
         </Grid>
 
-        {/* Features Grid */}
-        <Typography variant="h4" component="h2" textAlign="center" gutterBottom sx={{ mb: 6, fontWeight: 700 }}>
+        {/* Features Grid - FIXED LAYOUT */}
+        <Typography variant="h3" component="h2" textAlign="center" gutterBottom sx={{ mb: 6, fontWeight: 700 }}>
           Zašto odabrati nas?
         </Typography>
         
-        <Grid container spacing={4}>
+        <Box
+          sx={{
+            display: 'grid',
+            gridTemplateColumns: {
+              xs: '1fr',                    // 1 column on mobile
+              sm: 'repeat(2, 1fr)',         // 2 columns on tablet
+              md: 'repeat(4, 1fr)'          // 4 columns on desktop
+            },
+            gap: 4,                         // Consistent gap between cards
+            alignItems: 'stretch'           // Stretch cards to equal height
+          }}
+        >
           {features.map((feature, index) => (
-            <Grid item xs={12} sm={6} md={3} key={index}>
-              <Card
-                sx={{
-                  height: '100%',
-                  textAlign: 'center',
-                  p: 3,
-                  borderRadius: 3,
-                  transition: 'transform 0.3s ease',
-                  '&:hover': {
-                    transform: 'translateY(-5px)',
-                    boxShadow: '0 8px 25px rgba(0,0,0,0.15)'
-                  }
+            <Card
+              key={index}
+              sx={{
+                height: '100%',
+                minHeight: '240px',         // Fixed minimum height for consistency
+                display: 'flex',            // Use flexbox for internal layout
+                flexDirection: 'column',    // Stack content vertically
+                borderRadius: 3,            // Consistent rounded corners
+                transition: 'transform 0.3s ease',
+                '&:hover': {
+                  transform: 'translateY(-5px)',
+                  boxShadow: '0 8px 25px rgba(0,0,0,0.15)'
+                }
+              }}
+            >
+              <CardContent 
+                sx={{ 
+                  p: 3,                     // Consistent padding
+                  textAlign: 'center',      // Center text
+                  height: '100%',           // Take up full height
+                  display: 'flex',
+                  flexDirection: 'column',
+                  justifyContent: 'space-between'  // Space content evenly
                 }}
               >
-                <CardContent>
-                  <Box sx={{ mb: 2 }}>
-                    {feature.icon}
-                  </Box>
-                  <Typography variant="h6" component="h3" gutterBottom sx={{ fontWeight: 600 }}>
+                <Box sx={{ mb: 3 }}>
+                  {feature.icon}
+                </Box>
+                <Box>
+                  <Typography 
+                    variant="h6" 
+                    component="h3" 
+                    gutterBottom 
+                    sx={{ 
+                      fontWeight: 600,
+                      minHeight: '52px',    // Fixed height for title area
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center'
+                    }}
+                  >
                     {feature.title}
                   </Typography>
-                  <Typography variant="body2" color="text.secondary">
+                  <Typography 
+                    variant="body2" 
+                    color="text.secondary"
+                    sx={{
+                      lineHeight: 1.5      // Consistent line height
+                    }}
+                  >
                     {feature.description}
                   </Typography>
-                </CardContent>
-              </Card>
-            </Grid>
+                </Box>
+              </CardContent>
+            </Card>
           ))}
-        </Grid>
+        </Box>
       </Container>
     </Box>
   );

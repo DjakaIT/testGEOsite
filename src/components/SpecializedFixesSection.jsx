@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Container, Typography, Grid, Card, CardContent, CardMedia, Chip } from '@mui/material';
+import { Box, Container, Typography, Card, CardContent, CardMedia, Chip } from '@mui/material';
 import {
   Memory,
   Thermostat,
@@ -135,78 +135,130 @@ function SpecializedFixesSection() {
           Profesionalni pristup najsloženijim IT problemima
         </Typography>
         
-        <Grid container spacing={4}>
+        {/* FIXED LAYOUT: Using CSS Grid instead of MUI Grid for better control */}
+        <Box
+          sx={{
+            display: 'grid',
+            gridTemplateColumns: {
+              xs: '1fr',                    // 1 column on mobile
+              sm: 'repeat(2, 1fr)',         // 2 columns on tablet
+              lg: 'repeat(3, 1fr)'          // 3 columns on desktop
+            },
+            gap: { xs: 3, sm: 4 },         // Consistent gap between cards
+            mb: 6                          // Bottom margin
+          }}
+        >
           {specializedServices.map((service, index) => (
-            <Grid item xs={12} sm={6} lg={4} key={index}>
-              <Card
-                sx={{
-                  height: '100%',
+            <Card
+              key={index}
+              sx={{
+                display: 'flex',
+                flexDirection: 'column',
+                height: '100%',             // Full height
+                minHeight: '450px',         // Minimum height for consistency
+                maxHeight: '450px',         // Maximum height for consistency
+                borderRadius: 2,            // Consistent rounded corners
+                overflow: 'hidden',         // Hide overflow
+                transition: 'all 0.3s ease-in-out',
+                '&:hover': {
+                  transform: 'translateY(-8px)',
+                  boxShadow: '0 12px 30px rgba(0,0,0,0.15)'
+                }
+              }}
+            >
+              <Box sx={{ position: 'relative' }}>
+                <CardMedia
+                  component="img"
+                  height="200"
+                  image="/src/assets/thermalPaste.jpg"
+                  alt={service.title}
+                  sx={{ objectFit: 'cover' }}
+                />
+                <Box
+                  sx={{
+                    position: 'absolute',
+                    top: 16,
+                    right: 16,
+                    backgroundColor: 'rgba(255,255,255,0.9)',
+                    borderRadius: '50%',
+                    p: 1,
+                    color: '#667eea'
+                  }}
+                >
+                  {service.icon}
+                </Box>
+              </Box>
+              
+              <CardContent 
+                sx={{ 
+                  flexGrow: 1,
+                  p: 3,
                   display: 'flex',
                   flexDirection: 'column',
-                  transition: 'all 0.3s ease-in-out',
-                  '&:hover': {
-                    transform: 'translateY(-8px)',
-                    boxShadow: '0 12px 30px rgba(0,0,0,0.15)'
-                  }
+                  justifyContent: 'space-between' // Key for alignment
                 }}
               >
-                <Box sx={{ position: 'relative' }}>
-                  <CardMedia
-                    component="img"
-                    height="200"
-                    image="/src/assets/thermalPaste.jpg"
-                    alt={service.title}
-                    sx={{ objectFit: 'cover' }}
-                  />
-                  <Box
-                    sx={{
-                      position: 'absolute',
-                      top: 16,
-                      right: 16,
-                      backgroundColor: 'rgba(255,255,255,0.9)',
-                      borderRadius: '50%',
-                      p: 1,
-                      color: '#667eea'
+                <Box>
+                  <Typography 
+                    variant="h6" 
+                    component="h3" 
+                    gutterBottom 
+                    sx={{ 
+                      fontWeight: 600,
+                      minHeight: '48px',    // Fixed height for title
+                      display: 'flex',
+                      alignItems: 'center'
                     }}
                   >
-                    {service.icon}
-                  </Box>
-                </Box>
-                
-                <CardContent sx={{ flexGrow: 1, p: 3 }}>
-                  <Typography variant="h6" component="h3" gutterBottom sx={{ fontWeight: 600 }}>
                     {service.title}
                   </Typography>
                   
-                  <Typography variant="body2" color="text.secondary" sx={{ mb: 3, lineHeight: 1.6 }}>
+                  <Typography 
+                    variant="body2" 
+                    color="text.secondary" 
+                    sx={{ 
+                      mb: 3, 
+                      lineHeight: 1.6,
+                      display: '-webkit-box',
+                      WebkitLineClamp: 3,
+                      WebkitBoxOrient: 'vertical',
+                      overflow: 'hidden',
+                      height: '60px'        // Fixed height for description
+                    }}
+                  >
                     {service.description}
                   </Typography>
-                  
-                  <Box sx={{ mt: 'auto' }}>
-                    <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 2 }}>
-                      <Typography variant="h6" color="primary" sx={{ fontWeight: 600 }}>
-                        {service.price}
-                      </Typography>
-                      <Typography variant="body2" color="text.secondary">
-                        {service.duration}
-                      </Typography>
-                    </Box>
-                    
-                    <Chip
-                      label={service.complexity}
-                      size="small"
-                      sx={{
-                        backgroundColor: getComplexityColor(service.complexity),
-                        color: 'white',
-                        fontWeight: 500
-                      }}
-                    />
+                </Box>
+                
+                <Box sx={{ mt: 'auto' }}>
+                  <Box sx={{ 
+                    display: 'flex', 
+                    justifyContent: 'space-between', 
+                    alignItems: 'center', 
+                    mb: 2
+                  }}>
+                    <Typography variant="h6" color="primary" sx={{ fontWeight: 600 }}>
+                      {service.price}
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      {service.duration}
+                    </Typography>
                   </Box>
-                </CardContent>
-              </Card>
-            </Grid>
+                  
+                  <Chip
+                    label={service.complexity}
+                    size="small"
+                    sx={{
+                      backgroundColor: getComplexityColor(service.complexity),
+                      color: 'white',
+                      fontWeight: 500
+                    }}
+                  />
+                </Box>
+              </CardContent>
+            </Card>
           ))}
-        </Grid>
+        </Box>
         
         <Box sx={{ textAlign: 'center', mt: 6 }}>
           <Typography variant="body1" color="text.secondary">
