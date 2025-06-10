@@ -14,34 +14,61 @@ function ContactHeroSection() {
       }}
     >
       <Container maxWidth="lg" sx={{ px: { xs: 2, sm: 3, md: 4 } }}>
-        <Breadcrumbs 
-          aria-label="breadcrumb" 
-          sx={{ 
-            mb: 4, 
-            justifyContent: 'center', 
-            display: 'flex',
-            '& .MuiBreadcrumbs-separator': { color: 'white' },
-            '& .MuiBreadcrumbs-ol': { justifyContent: 'center' }
-          }}
-        >
-          <Link 
-            color="inherit" 
-            href="/" 
+        {/* Improved Breadcrumbs with ARIA roles */}
+        <nav aria-label="Breadcrumb" style={{ marginBottom: '1.5rem' }}>
+          <Breadcrumbs 
             sx={{ 
-              display: 'flex', 
-              alignItems: 'center',
-              textDecoration: 'none',
-              '&:hover': { textDecoration: 'underline' }
+              justifyContent: 'center', 
+              display: 'flex',
+              '& .MuiBreadcrumbs-separator': { color: 'white' },
+              '& .MuiBreadcrumbs-ol': { justifyContent: 'center' }
             }}
           >
-            <Home sx={{ mr: 0.5 }} fontSize="inherit" />
-            Početna
-          </Link>
-          <Typography color="white" sx={{ display: 'flex', alignItems: 'center' }}>
-            <ContactMail sx={{ mr: 0.5 }} fontSize="inherit" />
-            Kontakt
-          </Typography>
-        </Breadcrumbs>
+            <Link 
+              color="inherit" 
+              href="/" 
+              sx={{ 
+                display: 'flex', 
+                alignItems: 'center',
+                textDecoration: 'none',
+                color: 'rgba(255, 255, 255, 0.9)',
+                backgroundColor: 'rgba(0, 0, 0, 0.2)',
+                px: 1.5,
+                py: 0.5,
+                borderRadius: 1,
+                transition: 'all 0.2s ease',
+                '&:hover': { 
+                  textDecoration: 'underline',
+                  backgroundColor: 'rgba(0, 0, 0, 0.3)',
+                  color: 'white'
+                },
+                '&:focus': {  // Added focus styles
+                  outline: '2px solid white',
+                  outlineOffset: '2px'
+                }
+              }}
+            >
+              <Home sx={{ mr: 0.5 }} fontSize="inherit" aria-hidden="true" />
+              <span>Početna</span>
+            </Link>
+            {/* Current page with aria-current */}
+            <Typography 
+              color="white" 
+              sx={{ 
+                display: 'flex', 
+                alignItems: 'center',
+                px: 1.5,
+                py: 0.5,
+                backgroundColor: 'rgba(255, 255, 255, 0.15)',
+                borderRadius: 1
+              }}
+              aria-current="page"
+            >
+              <ContactMail sx={{ mr: 0.5 }} fontSize="inherit" aria-hidden="true" />
+              <span>Kontakt</span>
+            </Typography>
+          </Breadcrumbs>
+        </nav>
 
         <Typography variant="h2" component="h1" gutterBottom sx={{ fontWeight: 'bold' }}>
           Kontaktirajte nas

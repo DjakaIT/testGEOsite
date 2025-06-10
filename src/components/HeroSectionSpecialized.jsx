@@ -31,7 +31,17 @@ function HeroSectionSpecialized() {
               display: 'flex', 
               alignItems: 'center',
               textDecoration: 'none',
-              '&:hover': { textDecoration: 'underline' }
+              color: 'rgba(255, 255, 255, 0.9)',
+              backgroundColor: 'rgba(255, 255, 255, 0.15)',  // Lighter background for this dark section
+              px: 1.5,
+              py: 0.5,
+              borderRadius: 1,
+              transition: 'all 0.2s ease',
+              '&:hover': { 
+                textDecoration: 'underline',
+                backgroundColor: 'rgba(255, 255, 255, 0.25)',
+                color: 'white'
+              }
             }}
           >
             <Home sx={{ mr: 0.5 }} fontSize="inherit" />

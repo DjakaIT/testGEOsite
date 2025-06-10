@@ -102,7 +102,7 @@ function ContactInfoSection() {
               }}
             >
               <Typography variant="h6" gutterBottom sx={{ fontWeight: 600 }}>
-                Trebate hitnu pomoć?
+                Potreban vam je popravak računala odmah?
               </Typography>
               <Typography variant="body1" color="text.secondary" sx={{ mb: 3 }}>
                 Za hitne slučajeve možete nas nazvati ili poslati WhatsApp poruku

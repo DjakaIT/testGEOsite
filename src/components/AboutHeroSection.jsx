@@ -31,7 +31,17 @@ function AboutHeroSection() {
               display: 'flex', 
               alignItems: 'center',
               textDecoration: 'none',
-              '&:hover': { textDecoration: 'underline' }
+              color: 'rgba(255, 255, 255, 0.9)',  // Improved visibility
+              backgroundColor: 'rgba(0, 0, 0, 0.2)',  // Background for better contrast
+              px: 1.5,
+              py: 0.5,
+              borderRadius: 1,
+              transition: 'all 0.2s ease',
+              '&:hover': { 
+                textDecoration: 'underline',
+                backgroundColor: 'rgba(0, 0, 0, 0.3)',
+                color: 'white'
+              }
             }}
           >
             <Home sx={{ mr: 0.5 }} fontSize="inherit" />
