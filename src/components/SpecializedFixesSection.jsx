@@ -14,6 +14,7 @@ import {
   Dvr,
   Router
 } from '@mui/icons-material';
+import thermalPasteImage from '../assets/thermalPaste.JPG';
 
 function SpecializedFixesSection() {
   const specializedServices = [
@@ -183,12 +184,7 @@ function SpecializedFixesSection() {
                   component="img"
                   height="200"
                   width="100%"
-                  image={`/src/assets/services/${service.id}-${service.title.toLowerCase().replace(/\s+/g, '-')}.webp`}
-                  srcSet={`
-                    /src/assets/services/${service.id}-${service.title.toLowerCase().replace(/\s+/g, '-')}-300w.webp 300w,
-                    /src/assets/services/${service.id}-${service.title.toLowerCase().replace(/\s+/g, '-')}-600w.webp 600w
-                  `}
-                  sizes="(max-width: 600px) 300px, 600px"
+                  image={thermalPasteImage}
                   alt={`${service.title} - IT servis DigiPort Zadar`}
                   loading="lazy"
                   sx={{ objectFit: 'cover' }}
