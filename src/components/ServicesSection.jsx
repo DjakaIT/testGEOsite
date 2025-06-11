@@ -188,6 +188,42 @@ function ServicesSection() {
           Saznajte više o našim uslugama
         </Button>
       </Box>
+
+      {/* Novi sadržaj za kvalitetu i SEO */}
+      <Box sx={{ mt: 8, mb: 4 }}>
+        <Typography variant="h2" component="h2" gutterBottom>
+          Stručni IT servis u Zadru
+        </Typography>
+        
+        <Typography variant="body1" paragraph>
+          DigiPort je vodeći pružatelj IT usluga u Zadru s preko 10 godina iskustva. Naša stručnost u servisu računala, 
+          laptopa i mobilnih uređaja osigurava vam brza i pouzdana rješenja za sve tehnološke probleme. Koristimo 
+          najnovije alate i metode kako bismo dijagnosticirali i riješili širok spektar hardverskih i softverskih problema.
+        </Typography>
+        
+        <Typography variant="body1" paragraph>
+          Naš tim tehničara kontinuirano se educira o najnovijim tehnologijama i trendovima kako bi vam mogao pružiti 
+          vrhunsku uslugu. Ponosimo se našom sposobnošću rješavanja složenih IT problema, od uklanjanja virusa do 
+          spašavanja podataka s oštećenih diskova. Naša strast prema tehnologiji i predanost zadovoljstvu klijenata 
+          čine nas idealnim partnerom za sve vaše IT potrebe.
+        </Typography>
+        
+        <Typography variant="h3" component="h3" gutterBottom sx={{ mt: 4 }}>
+          Zašto klijenti biraju DigiPort?
+        </Typography>
+        
+        <Typography variant="body1" paragraph>
+          Klijenti diljem Zadra i okolice odabiru DigiPort zbog naše reputacije za pouzdanost, stručnost i odlične cijene. 
+          Razumijemo koliko je važno brzo riješiti tehnološke probleme, bilo da je riječ o osobnom računalu, poslovnom 
+          laptopu ili pametnom telefonu. Naš cilj je minimizirati vrijeme prekida rada i osigurati optimalne performanse vaših uređaja.
+        </Typography>
+        
+        <Typography variant="body1" paragraph>
+          Kroz godine, izgradili smo snažnu lokalnu zajednicu zadovoljnih klijenata koji cijene našu transparentnost, 
+          poštene cijene i kvalitetu usluge. Ponosni smo na činjenicu da većina našeg poslovanja dolazi od preporuka 
+          i povratnih klijenata, što govori o razini povjerenja koje smo izgradili u zadarskoj zajednici.
+        </Typography>
+      </Box>
     </Container>
   );
 }

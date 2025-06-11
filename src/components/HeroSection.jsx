@@ -20,7 +20,8 @@ function HeroSection() {
           sx={{ 
             fontFamily: 'Inter, sans-serif',
             fontWeight: 'bold', 
-            fontSize: { xs: '2.5rem', md: '3.5rem' } 
+            fontSize: { xs: '2.5rem', md: '3.5rem' }, 
+            className: 'main-heading'
           }}
         >
           Dobrodošli u DigiPort
