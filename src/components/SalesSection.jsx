@@ -21,60 +21,60 @@ function SalesSection() {
       category: 'Memorijske komponente',
       icon: <Memory sx={{ fontSize: 30 }} />,
       products: [
-        { name: 'DDR4 RAM memorija', price: 'Od 200 kn', stock: 'Na zalihi' },
-        { name: 'DDR5 RAM memorija', price: 'Od 350 kn', stock: 'Na zalihi' },
-        { name: 'SSD diskovi', price: 'Od 180 kn', stock: 'Na zalihi' },
-        { name: 'HDD diskovi', price: 'Od 150 kn', stock: 'Na zalihi' }
+        { name: 'DDR4 RAM memorija', price: 'Od 200 €', stock: 'Na zalihi' },
+        { name: 'DDR5 RAM memorija', price: 'Od 350 €', stock: 'Na zalihi' },
+        { name: 'SSD diskovi', price: 'Od 180 €', stock: 'Na zalihi' },
+        { name: 'HDD diskovi', price: 'Od 150 €', stock: 'Na zalihi' }
       ]
     },
     {
       category: 'Periferija',
       icon: <Mouse sx={{ fontSize: 30 }} />,
       products: [
-        { name: 'Bežični miševi', price: 'Od 50 kn', stock: 'Na zalihi' },
-        { name: 'Gaming miševi', price: 'Od 120 kn', stock: 'Na zalihi' },
-        { name: 'Bežične tipkovnice', price: 'Od 80 kn', stock: 'Na zalihi' },
-        { name: 'Gaming tipkovnice', price: 'Od 200 kn', stock: 'Ograničeno' }
+        { name: 'Bežični miševi', price: 'Od 50 €', stock: 'Na zalihi' },
+        { name: 'Gaming miševi', price: 'Od 120 €', stock: 'Na zalihi' },
+        { name: 'Bežične tipkovnice', price: 'Od 80 €', stock: 'Na zalihi' },
+        { name: 'Gaming tipkovnice', price: 'Od 200 €', stock: 'Ograničeno' }
       ]
     },
     {
       category: 'Audio oprema',
       icon: <Headphones sx={{ fontSize: 30 }} />,
       products: [
-        { name: 'Bluetooth slušalice', price: 'Od 100 kn', stock: 'Na zalihi' },
-        { name: 'Gaming headset', price: 'Od 250 kn', stock: 'Na zalihi' },
-        { name: 'PC zvučnici', price: 'Od 80 kn', stock: 'Na zalihi' },
-        { name: 'Studio slušalice', price: 'Od 300 kn', stock: 'Po narudžbi' }
+        { name: 'Bluetooth slušalice', price: 'Od 100 €', stock: 'Na zalihi' },
+        { name: 'Gaming headset', price: 'Od 250 €', stock: 'Na zalihi' },
+        { name: 'PC zvučnici', price: 'Od 80 €', stock: 'Na zalihi' },
+        { name: 'Studio slušalice', price: 'Od 300 €', stock: 'Po narudžbi' }
       ]
     },
     {
       category: 'Kablovi i adapteri',
       icon: <Cable sx={{ fontSize: 30 }} />,
       products: [
-        { name: 'USB-C kablovi', price: 'Od 25 kn', stock: 'Na zalihi' },
-        { name: 'HDMI kablovi', price: 'Od 30 kn', stock: 'Na zalihi' },
-        { name: 'Ethernet kablovi', price: 'Od 20 kn', stock: 'Na zalihi' },
-        { name: 'Punjači za laptop', price: 'Od 120 kn', stock: 'Na zalihi' }
+        { name: 'USB-C kablovi', price: 'Od 25 €', stock: 'Na zalihi' },
+        { name: 'HDMI kablovi', price: 'Od 30 €', stock: 'Na zalihi' },
+        { name: 'Ethernet kablovi', price: 'Od 20 €', stock: 'Na zalihi' },
+        { name: 'Punjači za laptop', price: 'Od 120 €', stock: 'Na zalihi' }
       ]
     },
     {
       category: 'Mrežna oprema',
       icon: <Router sx={{ fontSize: 30 }} />,
       products: [
-        { name: 'Wi-Fi routeri', price: 'Od 150 kn', stock: 'Na zalihi' },
-        { name: 'Mrežni switchevi', price: 'Od 100 kn', stock: 'Na zalihi' },
-        { name: 'USB Wi-Fi adapteri', price: 'Od 40 kn', stock: 'Na zalihi' },
-        { name: 'Powerline adapteri', price: 'Od 180 kn', stock: 'Ograničeno' }
+        { name: 'Wi-Fi routeri', price: 'Od 150 €', stock: 'Na zalihi' },
+        { name: 'Mrežni switchevi', price: 'Od 100 €', stock: 'Na zalihi' },
+        { name: 'USB Wi-Fi adapteri', price: 'Od 40 €', stock: 'Na zalihi' },
+        { name: 'Powerline adapteri', price: 'Od 180 €', stock: 'Ograničeno' }
       ]
     },
     {
       category: 'USB i memorijske kartice',
       icon: <Usb sx={{ fontSize: 30 }} />,
       products: [
-        { name: 'USB flash diskovi', price: 'Od 30 kn', stock: 'Na zalihi' },
-        { name: 'MicroSD kartice', price: 'Od 40 kn', stock: 'Na zalihi' },
-        { name: 'SD kartice', price: 'Od 50 kn', stock: 'Na zalihi' },
-        { name: 'Eksterni diskovi', price: 'Od 200 kn', stock: 'Na zalihi' }
+        { name: 'USB flash diskovi', price: 'Od 30 €', stock: 'Na zalihi' },
+        { name: 'MicroSD kartice', price: 'Od 40 €', stock: 'Na zalihi' },
+        { name: 'SD kartice', price: 'Od 50 €', stock: 'Na zalihi' },
+        { name: 'Eksterni diskovi', price: 'Od 200 €', stock: 'Na zalihi' }
       ]
     }
   ];
