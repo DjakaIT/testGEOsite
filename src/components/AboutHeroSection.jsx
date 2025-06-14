@@ -53,11 +53,19 @@ function AboutHeroSection() {
           </Typography>
         </Breadcrumbs>
 
-        <Typography variant="h2" component="h1" gutterBottom sx={{ fontWeight: 'bold' }}>
-          O DigiPort-u
+        <Typography 
+          variant="h1" 
+          component="h1" 
+          gutterBottom 
+          sx={{ 
+            fontWeight: 'bold',
+            className: 'main-heading'
+          }}
+        >
+          O DigiPort-u - Pouzdani računalni Servis u Zadru
         </Typography>
         <Typography variant="h5" sx={{ mb: 4, opacity: 0.9 }}>
-          Vaš pouzdani IT partner u Zadru
+          Dostupni uvijek, brzi u reagiranju i učinkoviti uz minimalne cijene!
         </Typography>
       </Container>
     </Box>

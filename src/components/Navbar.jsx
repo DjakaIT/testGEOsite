@@ -8,7 +8,7 @@ import {
   IconButton,
   Drawer,
   List,
-  ListItem,
+  ListItemButton,
   ListItemText,
   useTheme,
   useMediaQuery
@@ -54,8 +54,7 @@ function Navbar() {
       </Box>
       <List>
         {menuItems.map((item) => (
-          <ListItem 
-            button 
+          <ListItemButton
             key={item.label} 
             component="a" 
             href={item.href}
@@ -75,7 +74,7 @@ function Navbar() {
                 }
               }}
             />
-          </ListItem>
+          </ListItemButton>
         ))}
       </List>
     </Box>

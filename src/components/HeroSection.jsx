@@ -18,13 +18,12 @@ function HeroSection() {
           component="h1" 
           gutterBottom 
           sx={{ 
-            fontFamily: 'Inter, sans-serif',
             fontWeight: 'bold', 
-            fontSize: { xs: '2.5rem', md: '3.5rem' }, 
+            fontSize: { xs: '2.5rem', md: '3.5rem' },
             className: 'main-heading'
           }}
         >
-          Dobrodošli u DigiPort
+          DigiPort Zadar - Servis Računala i Mobitela
         </Typography>
         <Typography variant="h5" sx={{ mb: 4, opacity: 0.9 }}>
           Vaš pouzdani servis računala u Zadru

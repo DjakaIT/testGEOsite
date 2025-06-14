@@ -70,8 +70,16 @@ function ContactHeroSection() {
           </Breadcrumbs>
         </nav>
 
-        <Typography variant="h2" component="h1" gutterBottom sx={{ fontWeight: 'bold' }}>
-          Kontaktirajte nas
+        <Typography 
+          variant="h1" 
+          component="h1" 
+          gutterBottom 
+          sx={{ 
+            fontWeight: 'bold',
+            className: 'main-heading'
+          }}
+        >
+          Kontaktirajte DigiPort - IT Servis Zadar
         </Typography>
         <Typography variant="h5" sx={{ mb: 4, opacity: 0.9 }}>
           Dostupni smo za sva vaša IT pitanja
