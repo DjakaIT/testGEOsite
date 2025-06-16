@@ -25,7 +25,7 @@ function HeroSection() {
         >
           DigiPort Zadar - Servis Računala i Mobitela
         </Typography>
-        <Typography variant="h5" sx={{ mb: 4, opacity: 0.9 }}>
+        <Typography variant="h3" sx={{ mb: 4, opacity: 0.9 }}>
           Vaš pouzdani servis računala u Zadru
         </Typography>
         <Typography variant="body1" sx={{ mb: 4, fontSize: '1.2rem' }}>

@@ -5,7 +5,7 @@ function Seo({
   title = 'DigiPort Zadar - Servis Računala i Mobitela', 
   description = 'DigiPort Zadar nudi profesionalni servis računala, laptopa i mobitela. Nudimo brze popravke, nadogradnje, uklanjanje virusa i prodaju IT opreme.' 
 }) {
-  const baseUrl = 'https://www.digiport.hr';
+  const baseUrl = 'https://digiport.netlify.app/';
   const fullUrl = `${baseUrl}${canonicalPath || ''}`;
   
   useEffect(() => {
