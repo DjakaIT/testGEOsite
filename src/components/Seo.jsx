@@ -45,7 +45,7 @@ function Seo({
     setMetaTag('twitter:title', title);
     setMetaTag('twitter:description', description);
     
-    // Set canonical link
+    // Set canonical link - ensure this runs on each page
     let canonicalElement = document.querySelector('link[rel="canonical"]');
     if (!canonicalElement) {
       canonicalElement = document.createElement('link');
@@ -53,8 +53,13 @@ function Seo({
       document.head.appendChild(canonicalElement);
     }
     canonicalElement.setAttribute('href', fullUrl);
+    
+    return () => {
+      // Optional: Clean up if component unmounts
+    };
   }, [title, description, fullUrl]);
   
+  // Return null since this is a utility component
   return null;
 }
 

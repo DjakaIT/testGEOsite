@@ -74,10 +74,8 @@ function ContactHeroSection() {
           variant="h1" 
           component="h1" 
           gutterBottom 
-          sx={{ 
-            fontWeight: 'bold',
-            className: 'main-heading'
-          }}
+          className="main-heading"  
+          sx={{ fontWeight: 'bold' }}
         >
           Kontaktirajte DigiPort - IT Servis Zadar
         </Typography>

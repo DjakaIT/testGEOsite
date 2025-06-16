@@ -17,10 +17,10 @@ function HeroSection() {
           variant="h1" 
           component="h1" 
           gutterBottom 
+          className="main-heading"  // Moved outside sx
           sx={{ 
             fontWeight: 'bold', 
-            fontSize: { xs: '2.5rem', md: '3.5rem' },
-            className: 'main-heading'
+            fontSize: { xs: '2.5rem', md: '3.5rem' }
           }}
         >
           DigiPort Zadar - Servis Računala i Mobitela

@@ -57,10 +57,8 @@ function AboutHeroSection() {
           variant="h1" 
           component="h1" 
           gutterBottom 
-          sx={{ 
-            fontWeight: 'bold',
-            className: 'main-heading'
-          }}
+          className="main-heading"  // Moved outside sx
+          sx={{ fontWeight: 'bold' }}
         >
           O DigiPort-u - Pouzdani računalni Servis u Zadru
         </Typography>

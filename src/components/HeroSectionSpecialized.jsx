@@ -53,8 +53,14 @@ function HeroSectionSpecialized() {
           </Typography>
         </Breadcrumbs>
 
-        <Typography variant="h2" component="h1" gutterBottom sx={{ fontWeight: 'bold' }}>
-          Specijalizirane usluge i prodaja
+        <Typography 
+          variant="h1" 
+          component="h1" 
+          gutterBottom 
+          className="main-heading"  // Moved outside sx
+          sx={{ fontWeight: 'bold' }}
+        >
+          Specijalizirane IT Usluge i Prodaja DigiPort
         </Typography>
         <Typography variant="h5" sx={{ mb: 4, opacity: 0.9 }}>
           Napredni popravci i kvalitetni IT proizvodi
