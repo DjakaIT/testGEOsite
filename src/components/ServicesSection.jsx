@@ -308,6 +308,31 @@ function ServicesSection() {
 
       {/* Novi sadržaj za kvalitetu i SEO */}
       {seoRichContent}
+
+      <Box sx={{ my: 8 }}>
+        <Typography variant="h2" component="h2" gutterBottom>
+          Najčešći problemi koje rješavamo
+        </Typography>
+        <Typography variant="body1" paragraph>
+          - Računalo se ne uključuje ili je sporo?  
+          - Laptop se pregrijava ili ima bučan ventilator?  
+          - Izgubili ste podatke s diska ili USB sticka?  
+          - Mobitel ne puni ili ima razbijen ekran?  
+          Naš tim ima iskustva s tisućama takvih slučajeva i koristi napredne alate za dijagnostiku i popravak.
+        </Typography>
+        <Typography variant="h3" component="h3" gutterBottom>
+          Primjeri iz prakse
+        </Typography>
+        <Typography variant="body1" paragraph>
+          Nedavno smo uspješno spasili podatke za lokalnu školu nakon kvara SSD diska, te optimizirali gaming PC za profesionalnog igrača iz Zadra. Naši klijenti cijene brzinu, stručnost i transparentnost cijena.
+        </Typography>
+        <Typography variant="h3" component="h3" gutterBottom>
+          Blog: IT savjeti i novosti iz Zadra
+        </Typography>
+        <Typography variant="body1" paragraph>
+          Pratite naš blog za najnovije savjete o sigurnosti, održavanju računala i trendovima u IT industriji. Redovito objavljujemo članke o zaštiti podataka, izboru najboljih komponenti i rješavanju najčešćih problema korisnika u Zadru.
+        </Typography>
+      </Box>
     </Container>
   );
 }

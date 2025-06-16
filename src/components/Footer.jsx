@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Container, Typography, Grid, Divider } from '@mui/material';
+import { Box, Container, Typography, Grid, Divider, Link } from '@mui/material';
 import { LocationOn, Phone, Email } from '@mui/icons-material';
 
 function Footer() {
@@ -48,7 +48,30 @@ function Footer() {
           </Grid>
         </Grid>
         <Divider sx={{ my: 3, backgroundColor: 'rgba(255,255,255,0.2)' }} />
-        <Typography variant="body2" textAlign="center" sx={{ opacity: 0.8 }}>
+        <Box sx={{ display: 'flex', justifyContent: 'center', gap: 2, mt: 4 }}>
+          <Link
+            href="/privatnost"
+            color="inherit"
+            sx={{
+              textDecoration: 'none',
+              '&:hover': { textDecoration: 'underline' },
+            }}
+          >
+            Pravila privatnosti
+          </Link>
+          <Typography color="inherit">|</Typography>
+          <Link
+            href="/uvjeti-koristenja"
+            color="inherit"
+            sx={{
+              textDecoration: 'none',
+              '&:hover': { textDecoration: 'underline' },
+            }}
+          >
+            Uvjeti korištenja
+          </Link>
+        </Box>
+        <Typography variant="body2" textAlign="center" sx={{ opacity: 0.8, mt: 2 }}>
           © 2025 DigiPort. Sva prava pridržana.
         </Typography>
       </Container>

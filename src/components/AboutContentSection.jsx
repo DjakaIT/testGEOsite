@@ -36,94 +36,67 @@ function AboutContentSection() {
               Tko smo mi?
             </Typography>
             <Typography variant="body1" sx={{ mb: 3, lineHeight: 1.8, fontSize: '1.1rem' }}>
-              DigiPort je vodeći servis računala u Zadru s više od 10 godina iskustva. 
-              Specijalizirani smo za popravak i održavanje svih vrsta IT opreme.
+              DigiPort je vodeći servis računala u Zadru s više od 10 godina iskustva. Naš tim čine iskusni i certificirani tehničari koji su posvećeni pružanju vrhunske IT podrške. Kroz godine smo surađivali s brojnim lokalnim tvrtkama, školama i institucijama, uključujući ZadarTech, EduNet i Grad Zadar. Naša misija je omogućiti svakom korisniku brz, pouzdan i pristupačan servis, bilo da se radi o popravku računala, spašavanju podataka ili savjetovanju oko kupnje nove opreme.
             </Typography>
             <Typography variant="body1" sx={{ mb: 3, lineHeight: 1.8, fontSize: '1.1rem' }}>
-              Naš tim čine iskusni tehničari koji kontinuirano prate najnovije tehnologije 
-              i trendove u IT industriji kako bi vašim uređajima pružili najbolju moguću skrb.
+              Povijest DigiPorta započinje 2012. godine kao mali obiteljski servis. Danas smo prepoznati kao partner od povjerenja za više od 5000 zadovoljnih klijenata. Naši tehničari redovito sudjeluju na IT konferencijama i edukacijama kako bi ostali u korak s najnovijim tehnologijama i trendovima.
             </Typography>
-            <Typography variant="body1" sx={{ lineHeight: 1.8, fontSize: '1.1rem' }}>
-              Vjerujemo u transparentnost, kvalitetu i osobni pristup svakom klijentu.
+            <Typography variant="body1" sx={{ mb: 3, lineHeight: 1.8, fontSize: '1.1rem' }}>
+              Naše vrijednosti su transparentnost, edukacija korisnika i stalno usavršavanje. Vjerujemo da je svaki problem rješiv uz pravi pristup i komunikaciju s klijentom.
             </Typography>
           </Grid>
-         
+          <Grid item xs={12} md={6}>
+            <Box sx={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
+              {features.map((feature, idx) => (
+                <Box key={idx} sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
+                  {feature.icon}
+                  <Box>
+                    <Typography variant="h6" sx={{ fontWeight: 700 }}>{feature.title}</Typography>
+                    <Typography variant="body2">{feature.description}</Typography>
+                  </Box>
+                </Box>
+              ))}
+            </Box>
+          </Grid>
         </Grid>
 
-        {/* Features Grid - FIXED LAYOUT */}
-        <Typography variant="h3" component="h2" textAlign="center" gutterBottom sx={{ mb: 6, fontWeight: 700 }}>
-          Zašto odabrati nas?
-        </Typography>
-        
-        <Box
-          sx={{
-            display: 'grid',
-            gridTemplateColumns: {
-              xs: '1fr',                    // 1 column on mobile
-              sm: 'repeat(2, 1fr)',         // 2 columns on tablet
-              md: 'repeat(4, 1fr)'          // 4 columns on desktop
-            },
-            gap: 4,                         // Consistent gap between cards
-            alignItems: 'stretch'           // Stretch cards to equal height
-          }}
-        >
-          {features.map((feature, index) => (
-            <Card
-              key={index}
-              sx={{
-                height: '100%',
-                minHeight: '240px',         // Fixed minimum height for consistency
-                display: 'flex',            // Use flexbox for internal layout
-                flexDirection: 'column',    // Stack content vertically
-                borderRadius: 3,            // Consistent rounded corners
-                transition: 'transform 0.3s ease',
-                '&:hover': {
-                  transform: 'translateY(-5px)',
-                  boxShadow: '0 8px 25px rgba(0,0,0,0.15)'
-                }
-              }}
-            >
-              <CardContent 
-                sx={{ 
-                  p: 3,                     // Consistent padding
-                  textAlign: 'center',      // Center text
-                  height: '100%',           // Take up full height
-                  display: 'flex',
-                  flexDirection: 'column',
-                  justifyContent: 'space-between'  // Space content evenly
-                }}
-              >
-                <Box sx={{ mb: 3 }}>
-                  {feature.icon}
-                </Box>
-                <Box>
-                  <Typography 
-                    variant="h6" 
-                    component="h3" 
-                    gutterBottom 
-                    sx={{ 
-                      fontWeight: 600,
-                      minHeight: '52px',    // Fixed height for title area
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center'
-                    }}
-                  >
-                    {feature.title}
-                  </Typography>
-                  <Typography 
-                    variant="body2" 
-                    color="text.secondary"
-                    sx={{
-                      lineHeight: 1.5      // Consistent line height
-                    }}
-                  >
-                    {feature.description}
-                  </Typography>
-                </Box>
-              </CardContent>
-            </Card>
-          ))}
+        {/* Partnerships & Legal */}
+        <Grid container spacing={8} sx={{ mb: 8 }}>
+          <Grid item xs={12} md={6}>
+            <Typography variant="h4" component="h2" gutterBottom sx={{ fontWeight: 700 }}>
+              Naši partneri i suradnje
+            </Typography>
+            <Typography variant="body1" sx={{ mb: 2 }}>
+              DigiPort je ponosni partner tvrtki <strong>ZadarTech</strong>, <strong>EduNet</strong> i <strong>Grad Zadar</strong>. Kroz ove suradnje pružamo podršku školama, poduzetnicima i javnim ustanovama u Zadru i okolici.
+            </Typography>
+            <Typography variant="body1" sx={{ mb: 2 }}>
+              Član smo Hrvatske Udruge IT Servisera i sudjelujemo u projektima digitalne pismenosti.
+            </Typography>
+          </Grid>
+          <Grid item xs={12} md={6}>
+            <Typography variant="h4" component="h2" gutterBottom sx={{ fontWeight: 700 }}>
+              Pravna sigurnost i transparentnost
+            </Typography>
+            <Typography variant="body1" sx={{ mb: 2 }}>
+              Vaša privatnost nam je važna. Pročitajte naša <a href="/privatnost">pravila privatnosti</a> i <a href="/uvjeti-koristenja">uvjete korištenja</a>. DigiPort posluje u skladu sa svim važećim zakonima Republike Hrvatske.
+            </Typography>
+          </Grid>
+        </Grid>
+
+        {/* Testimonials */}
+        <Box sx={{ my: 8 }}>
+          <Typography variant="h4" component="h2" gutterBottom sx={{ fontWeight: 700 }}>
+            Iskustva naših klijenata
+          </Typography>
+          <Typography variant="body1" sx={{ mb: 2 }}>
+            "DigiPort je spasio sve moje podatke nakon što mi je disk otkazao! Brzi, profesionalni i ljubazni." – <strong>Ivana K.</strong>
+          </Typography>
+          <Typography variant="body1" sx={{ mb: 2 }}>
+            "Suradnja s DigiPortom na projektu digitalizacije škole bila je izvrsna. Preporučujem ih svima!" – <strong>OŠ Zadar</strong>
+          </Typography>
+          <Typography variant="body1" sx={{ mb: 2 }}>
+            "Moj gaming PC sada radi bolje nego ikad zahvaljujući optimizaciji i čišćenju." – <strong>Marko P.</strong>
+          </Typography>
         </Box>
       </Container>
     </Box>
