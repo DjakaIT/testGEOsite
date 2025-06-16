@@ -168,7 +168,7 @@ function AboutContentSection() {
               <CardContent>
                 <Stack direction="row" spacing={2} alignItems="center" sx={{ mb: 2 }}>
                   <Avatar sx={{ bgcolor: '#27ae60' }}>IK</Avatar>
-                  <Typography variant="subtitle1" sx={{ fontWeight: 600 }}>Ivana K.</Typography>
+                  <Typography variant="subtitle1" sx={{ fontWeight: 600 }}>Ivana K. - vlasnica obrta</Typography>
                 </Stack>
                 <Typography variant="body2" sx={{ fontStyle: 'italic' }}>
                   "DigiPort je spasio sve moje podatke nakon što mi je disk otkazao! Brzi, profesionalni i ljubazni."
@@ -181,7 +181,7 @@ function AboutContentSection() {
               <CardContent>
                 <Stack direction="row" spacing={2} alignItems="center" sx={{ mb: 2 }}>
                   <Avatar sx={{ bgcolor: '#27ae60' }}>OŠ</Avatar>
-                  <Typography variant="subtitle1" sx={{ fontWeight: 600 }}>OŠ Zadar</Typography>
+                  <Typography variant="subtitle1" sx={{ fontWeight: 600 }}>OŠ Preradović Zadar</Typography>
                 </Stack>
                 <Typography variant="body2" sx={{ fontStyle: 'italic' }}>
                   "Suradnja s DigiPortom na projektu digitalizacije škole bila je izvrsna. Preporučujem ih svima!"
@@ -194,7 +194,7 @@ function AboutContentSection() {
               <CardContent>
                 <Stack direction="row" spacing={2} alignItems="center" sx={{ mb: 2 }}>
                   <Avatar sx={{ bgcolor: '#27ae60' }}>MP</Avatar>
-                  <Typography variant="subtitle1" sx={{ fontWeight: 600 }}>Marko P.</Typography>
+                  <Typography variant="subtitle1" sx={{ fontWeight: 600 }}>Niko Kovač - profesionalni eSports igrač. </Typography>
                 </Stack>
                 <Typography variant="body2" sx={{ fontStyle: 'italic' }}>
                   "Moj gaming PC sada radi bolje nego ikad zahvaljujući optimizaciji i čišćenju."
