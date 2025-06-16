@@ -213,7 +213,7 @@ function SpecializedFixesSection() {
                   p: 3,
                   display: 'flex',
                   flexDirection: 'column',
-                  justifyContent: 'space-between' // Key for alignment
+                  justifyContent: 'space-between' 
                 }}
               >
                 <Box>
@@ -223,7 +223,7 @@ function SpecializedFixesSection() {
                     gutterBottom 
                     sx={{ 
                       fontWeight: 600,
-                      minHeight: '48px',    // Fixed height for title
+                      minHeight: '48px',    
                       display: 'flex',
                       alignItems: 'center'
                     }}
@@ -241,7 +241,7 @@ function SpecializedFixesSection() {
                       WebkitLineClamp: 3,
                       WebkitBoxOrient: 'vertical',
                       overflow: 'hidden',
-                      height: '60px'        // Fixed height for description
+                      height: '60px'        
                     }}
                   >
                     {service.description}
