@@ -60,13 +60,13 @@ function HeroSectionSpecialized() {
           className="main-heading"  // Moved outside sx
           sx={{ fontWeight: 'bold' }}
         >
-          Specijalizirane IT Usluge i Prodaja DigiPort
+          Specijalizirane hardverske usluge i prodaja - DigiPort
         </Typography>
         <Typography variant="h5" sx={{ mb: 4, opacity: 0.9 }}>
-          Napredni popravci i kvalitetni IT proizvodi
+          Napredni popravci i kvalitetne računalne komponente
         </Typography>
         <Typography variant="body1" sx={{ mb: 4, fontSize: '1.2rem' }}>
-          Profesionalni refurbishing, specijalizirani popravci i prodaja IT opreme u Zadru
+          Profesionalni refurbishing, efektivni popravci i prodaja IT opreme u Zadru
         </Typography>
       </Container>
     </Box>

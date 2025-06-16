@@ -80,7 +80,7 @@ function ContactHeroSection() {
           Kontaktirajte DigiPort - IT Servis Zadar
         </Typography>
         <Typography variant="h5" sx={{ mb: 4, opacity: 0.9 }}>
-          Dostupni smo za sva vaša IT pitanja
+          Dostupni smo za sva vaša pitanja vezana uz prodaju te servis računala
         </Typography>
       </Container>
     </Box>
