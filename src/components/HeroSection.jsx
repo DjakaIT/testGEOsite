@@ -26,7 +26,7 @@ function HeroSection() {
           DigiPort Zadar - Servis Računala i Mobitela
         </Typography>
         <Typography variant="h3" sx={{ mb: 4, opacity: 0.9 }}>
-          Vaš pouzdani servis popravak i prodaju računalne opreme
+          Vaš pouzdani servis za popravak i prodaju računalne opreme
         </Typography>
         <Typography variant="body1" sx={{ mb: 4, fontSize: '1.2rem' }}>
           Profesionalni popravak računala, laptopa i mobitela koji radimo više od 10 godina.
