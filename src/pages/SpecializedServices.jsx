@@ -24,7 +24,7 @@ function SpecializedServices() {
       {/* Modern FAQ Section */}
       <Container maxWidth="md" sx={{ my: 8 }}>
         <Typography variant="h2" component="h2" gutterBottom sx={{ fontWeight: 700, textAlign: 'center', mb: 4, fontSize: { xs: '1.1rem', md: '1.25rem' }  }}>
-          Najčešća pitanja o specijaliziranim IT uslugama u Zadru
+          Najčešća pitanja o našim uslugama popravaka
         </Typography>
         <Box>
           <Accordion>
