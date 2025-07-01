@@ -32,7 +32,7 @@ function HeroSectionSpecialized() {
               alignItems: 'center',
               textDecoration: 'none',
               color: 'rgba(255, 255, 255, 0.9)',
-              backgroundColor: 'rgba(255, 255, 255, 0.15)',  // Lighter background for this dark section
+              backgroundColor: 'rgba(255, 255, 255, 0.15)',  
               px: 1.5,
               py: 0.5,
               borderRadius: 1,
@@ -57,7 +57,7 @@ function HeroSectionSpecialized() {
           variant="h1" 
           component="h1" 
           gutterBottom 
-          className="main-heading"  // Moved outside sx
+          className="main-heading"  
           sx={{ fontWeight: 'bold' }}
         >
           Specijalizirane hardverske usluge i prodaja - DigiPort

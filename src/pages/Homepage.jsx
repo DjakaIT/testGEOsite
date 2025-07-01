@@ -21,7 +21,7 @@ function Homepage() {
       <HeroSection />
       <ServicesSection />
       <ReviewsSection />
-      <PromoBanner /> {/* Add the component here */}
+      <PromoBanner /> 
       <Footer />
     </Box>
   );

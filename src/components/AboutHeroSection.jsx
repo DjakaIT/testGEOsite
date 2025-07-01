@@ -31,8 +31,8 @@ function AboutHeroSection() {
               display: 'flex', 
               alignItems: 'center',
               textDecoration: 'none',
-              color: 'rgba(255, 255, 255, 0.9)',  // Improved visibility
-              backgroundColor: 'rgba(0, 0, 0, 0.2)',  // Background for better contrast
+              color: 'rgba(255, 255, 255, 0.9)',  
+              backgroundColor: 'rgba(0, 0, 0, 0.2)',  
               px: 1.5,
               py: 0.5,
               borderRadius: 1,
@@ -57,7 +57,7 @@ function AboutHeroSection() {
           variant="h1" 
           component="h1" 
           gutterBottom 
-          className="main-heading"  // Moved outside sx
+          className="main-heading"
           sx={{ fontWeight: 'bold' }}
         >
           O DigiPort-u - Pouzdani računalni Servis u Zadru

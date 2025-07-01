@@ -34,7 +34,6 @@ function ContactInfoSection() {
               Kako nas možete kontaktirati
             </Typography>
             
-            {/* Contact method cards grid - unchanged */}
             <Box
               sx={{
                 display: 'grid',
@@ -50,8 +49,8 @@ function ContactInfoSection() {
                 <Card
                   key={index}
                   sx={{
-                    height: '100%',         // Full height within grid cell
-                    minHeight: '200px',     // Minimum height for consistency
+                    height: '100%',         
+                    minHeight: '200px',     
                     borderRadius: 3,
                     transition: 'transform 0.3s ease',
                     '&:hover': {
@@ -67,7 +66,7 @@ function ContactInfoSection() {
                       display: 'flex',
                       flexDirection: 'column',
                       alignItems: 'center',
-                      justifyContent: 'space-between', // Properly space content
+                      justifyContent: 'space-between', 
                       textAlign: 'center'
                     }}
                   >
@@ -92,7 +91,6 @@ function ContactInfoSection() {
               ))}
             </Box>
 
-            {/* Quick Contact */}
             <Box 
               sx={{ 
                 backgroundColor: '#f8f9fa', 
@@ -145,9 +143,8 @@ function ContactInfoSection() {
             </Box>
           </Grid>
 
-          {/* Centered Location & Hours Card - Updated with horizontal layout */}
           <Grid item xs={12} sx={{ display: 'flex', justifyContent: 'center' }}>
-            <Box sx={{ width: '100%', maxWidth: '800px' }}> {/* Increased maxWidth for the horizontal layout */}
+            <Box sx={{ width: '100%', maxWidth: '800px' }}> 
               <Card 
                 sx={{ 
                   p: 4, 
@@ -155,7 +152,6 @@ function ContactInfoSection() {
                   height: '100%'
                 }}
               >
-                {/* Title - stays at the top */}
                 <Typography variant="h5" component="h3" gutterBottom sx={{ 
                   fontWeight: 600, 
                   textAlign: 'center',
@@ -208,7 +204,6 @@ function ContactInfoSection() {
                   </Box>
                 </Box>
 
-                {/* Advice box - full width below */}
                 <Box 
                   sx={{ 
                     backgroundColor: '#fff3cd', 

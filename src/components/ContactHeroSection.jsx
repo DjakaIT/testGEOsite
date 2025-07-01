@@ -14,7 +14,6 @@ function ContactHeroSection() {
       }}
     >
       <Container maxWidth="lg" sx={{ px: { xs: 2, sm: 3, md: 4 } }}>
-        {/* Improved Breadcrumbs with ARIA roles */}
         <nav aria-label="Breadcrumb" style={{ marginBottom: '1.5rem' }}>
           <Breadcrumbs 
             sx={{ 
@@ -51,7 +50,6 @@ function ContactHeroSection() {
               <Home sx={{ mr: 0.5 }} fontSize="inherit" aria-hidden="true" />
               <span>Početna</span>
             </Link>
-            {/* Current page with aria-current */}
             <Typography 
               color="white" 
               sx={{ 
